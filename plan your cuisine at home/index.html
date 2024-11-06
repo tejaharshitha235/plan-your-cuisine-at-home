@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Cuisine at Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul class="nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro">
+        <h1>Welcome to Our Restaurant!</h1>
+        <a href="#reservation" class="btn">Book a Table</a>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation">
+        <h2>Make a Reservation</h2>
+        <form id="reservation-form">
+            <input type="text" id="res-name" placeholder="Enter your name" required>
+            <input type="tel" id="res-phone" placeholder="Enter your phone number" required>
+            <button type="submit">Submit Reservation</button>
+        </form>
+        <div id="reservation-list"></div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div id="menu-items"></div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <form id="review-form">
+            <input type="text" id="reviewer-name" placeholder="Your Name" required>
+            <textarea id="review-text" placeholder="Your Review" required></textarea>
+            <button type="submit">Submit Review</button>
+        </form>
+        <div id="review-list"></div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
